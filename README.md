@@ -33,8 +33,9 @@ PaPaGei can be useful in multiple ways:
 #### Installation 
 
 1. Create a conda environment: ```conda create -n papagei_env python==3.10```
-2. Install the required packages in the environment: ```pip install -r requirements.txt ```
-3. Install the pyPPG package: ```pip install pyPPG==1.0.41``` (While this may result in wfdb package conflict, it will still work).
+2. Activate the environment: ```conda activate papagei_env```
+3. Install the required packages in the environment: ```pip install -r requirements.txt ```
+4. Install the pyPPG package: ```pip install pyPPG==1.0.41``` (While this may result in wfdb package conflict, it will still work).
 
 #### Downloading the model weights
 
