@@ -1,7 +1,7 @@
 torch 
 torchvision 
 torchaudio
-numpy
+numpy==1.26.4  # Pinned: torch_ecg needs numpy.dtypes (added in numpy 1.25); pyPPG's install force-downgrades numpy to 1.23.2 otherwise, breaking imports (fixes #6)
 pandas
 matplotlib
 joblib

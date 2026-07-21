@@ -59,6 +59,11 @@ PaPaGei offers versatility for developers and researchers:
     pip install pyPPG==1.0.41
     ```
     *Note: This might show a `wfdb` package conflict, but it should still function correctly.*
+4.  **Restore the Pinned numpy Version:**
+    ```bash
+    pip install numpy==1.26.4 --force-reinstall
+    ```
+    *Note: `pyPPG==1.0.41` hard-pins `numpy==1.23.2`, which lacks the `numpy.dtypes` submodule required by `torch_ecg`, causing an `AttributeError: module 'numpy' has no attribute 'dtypes'` on import (see [issue #6](https://github.com/Nokia-Bell-Labs/papagei-foundation-model/issues/6)). This step re-installs the numpy version pinned in `requirements.txt` after pyPPG downgrades it.*
 
 ### 🧠 Downloading Model Weights
 
